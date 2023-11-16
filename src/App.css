@@ -87,6 +87,7 @@ input[type="text"]{
 }
 .meme img{
   width: 500px;
+  border-radius: 10px;
 }
 
 .meme .top-txt, .bottom-txt{
