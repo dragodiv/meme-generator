@@ -123,4 +123,8 @@ input[type="text"]{
   .meme img{
     width: 90vw;
   }
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
