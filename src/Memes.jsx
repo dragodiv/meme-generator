@@ -1,4 +1,5 @@
 import React from "react";
+import Draggable from "react-draggable";
 // import MemeData from "./MemeData";
 
 export default function Memes() {
@@ -96,8 +97,12 @@ export default function Memes() {
             <button className="meme-btn" onClick={getNewImage} onLoad={() => document.getElementById("meme-btn").click()} id="meme-btn">Get a new meme image 🖼</button>
             <div className="meme" id="meme">
                 <img src={Meme.randomImage} alt="" className="meme-image" crossOrigin="anonymous" />
-                <h2 className="top-txt">{Meme.topText}</h2>
-                <h2 className="bottom-txt">{Meme.bottomText}</h2>
+                <Draggable>
+                    <h2 className="top-txt">{Meme.topText}</h2>
+                </Draggable>
+                <Draggable>
+                    <h2 className="bottom-txt">{Meme.bottomText}</h2>
+                </Draggable>
             </div>
             <button id="download-meme" onClick={() => downloadMeme()}>Download Meme</button>
         </div>

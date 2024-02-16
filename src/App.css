@@ -134,6 +134,7 @@ input[type="text"] {
     -3px 3px 0 #000,
     -3px 0 0 #000;
   ;
+  cursor: move;
 }
 
 .top-txt {
